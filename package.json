@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@adsk/alloy-react-theme": "^3.7.0",
+    "@adsk/ankit-ca-chat-app": "^1.0.23",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
