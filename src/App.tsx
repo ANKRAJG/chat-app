@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Reset } from '@adsk/alloy-react-theme';
+import { ChatModule } from '@adsk/ankit-ca-chat-app';
+
+const fetchBotResponse = () => new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('Bot response');
+  }, 1000);
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Reset />
+      <ChatModule fetchBotResponse={fetchBotResponse} />
+    </>
   );
 }
 
