@@ -1,6 +1,6 @@
 import './App.css';
 import { Reset } from '@adsk/alloy-react-theme';
-import { ChatModule } from '@adsk/ankit-ca-chat-app';
+// import { ChatModule } from '@adsk/ankit-ca-chat-app';
 
 const fetchBotResponse = () => new Promise((resolve) => {
   setTimeout(() => {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Reset />
-      <ChatModule fetchBotResponse={fetchBotResponse} />
+      {/* <ChatModule fetchBotResponse={fetchBotResponse} /> */}
     </>
   );
 }
